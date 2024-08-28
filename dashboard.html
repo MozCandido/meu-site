@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .mini-screen {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .mini-screen:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Dashboard</h2>
+    <div class="container">
+        <div class="mini-screen" onclick="openContent(1)">Conteúdo 1</div>
+        <div class="mini-screen" onclick="openContent(2)">Conteúdo 2</div>
+        <div class="mini-screen" onclick="openContent(3)">Conteúdo 3</div>
+    </div>
+
+    <script>
+        function openContent(contentId) {
+            alert('Abrindo conteúdo ' + contentId);
+            // Você pode redirecionar para outra página ou abrir um modal
+            // Exemplo de redirecionamento:
+            // window.location.href = 'conteudo' + contentId + '.html';
+        }
+    </script>
+</body>
+</html>
